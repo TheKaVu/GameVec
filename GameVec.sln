@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{47774AF8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameVec.UnitTests", "GameVec.UnitTests\GameVec.UnitTests.csproj", "{A364962B-77D2-4E66-A2C9-553320769C0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameVec.IntegrationTests", "GameVec.IntegrationTests\GameVec.IntegrationTests.csproj", "{8622F825-D4F8-426E-BC21-5FBAAE749B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameVec.SystemTests", "GameVec.SystemTests\GameVec.SystemTests.csproj", "{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{A364962B-77D2-4E66-A2C9-553320769C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A364962B-77D2-4E66-A2C9-553320769C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A364962B-77D2-4E66-A2C9-553320769C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8622F825-D4F8-426E-BC21-5FBAAE749B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8622F825-D4F8-426E-BC21-5FBAAE749B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8622F825-D4F8-426E-BC21-5FBAAE749B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8622F825-D4F8-426E-BC21-5FBAAE749B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D9BFB44E-025A-4A45-AACB-929C271CE4AF} = {C54FB199-E311-4234-A01E-1D426A8707E9}
 		{A364962B-77D2-4E66-A2C9-553320769C0C} = {47774AF8-D99C-438F-BC48-E6209331BBC0}
+		{8622F825-D4F8-426E-BC21-5FBAAE749B85} = {47774AF8-D99C-438F-BC48-E6209331BBC0}
+		{B31CDCC0-B06C-4EE5-8E6C-586324A7493D} = {47774AF8-D99C-438F-BC48-E6209331BBC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC39B9E0-7444-41B7-8CCD-6327F1E85343}
