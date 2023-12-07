@@ -8,7 +8,7 @@
     <ProjectGuid>{B31CDCC0-B06C-4EE5-8E6C-586324A7493D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameVec.SystemTests</RootNamespace>
+    <RootNamespace>WinXPP.GameVec.SystemTests</RootNamespace>
     <AssemblyName>GameVec.SystemTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

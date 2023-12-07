@@ -8,8 +8,8 @@
     <ProjectGuid>{8622F825-D4F8-426E-BC21-5FBAAE749B85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameVec.IntegrationTests</RootNamespace>
-    <AssemblyName>GameVec.IntegrationTests</AssemblyName>
+    <RootNamespace>WinXPP.GameVec.IntegrationTests</RootNamespace>
+    <AssemblyName>WinXPP.GameVec.IntegrationTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
