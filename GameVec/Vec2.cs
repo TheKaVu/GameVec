@@ -18,9 +18,7 @@ namespace WinXPP.GameVec
 
         public Vec2 Revert()
         {
-            X = -X;
-            Y = -Y;
-            return this;
+            return -this;
         }
 
         public Vec2 Scale(double x, double y)
@@ -28,6 +26,10 @@ namespace WinXPP.GameVec
             X *= x;
             Y *= y;
             return this;
+        }
+        public Vec2 Scale(Vec2 scale)
+        {
+            return Scale(scale.X, scale.Y);
         }
 
         public Point AsPoint()
@@ -43,6 +45,10 @@ namespace WinXPP.GameVec
         public static Vec2 operator -(Vec2 v1, Vec2 v2)
         {
             return new Vec2(v1.X - v2.X, v1.Y - v2.Y);
+        }
+        public static Vec2 operator -(Vec2 vec)
+        {
+            return new Vec2(-vec.X, -vec.Y);
         }
         public static Vec2 operator *(Vec2 vec, double d)
         {

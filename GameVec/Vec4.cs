@@ -1,4 +1,6 @@
-﻿namespace WinXPP.GameVec
+﻿using System;
+
+namespace WinXPP.GameVec
 {
     public struct Vec4
     {
@@ -26,11 +28,7 @@
 
         public Vec4 Revert()
         {
-            W = -W;
-            X = -X;
-            Y = -Y;
-            Z = -Z;
-            return this;
+            return -this;
         }
 
         public Vec4 Scale(double w, double x, double y, double z)
@@ -40,6 +38,10 @@
             Y *= y;
             Z *= z;
             return this;
+        }
+        public Vec4 Scale(Vec4 scale)
+        {
+            return Scale(scale.W, scale.X, scale.Y, scale.Z);
         }
 
         public static Vec4 operator +(Vec4 v1, Vec4 v2)

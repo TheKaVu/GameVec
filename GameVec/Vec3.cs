@@ -26,10 +26,7 @@
 
         public Vec3 Revert()
         {
-            X = -X;
-            Y = -Y;
-            Z = -Z;
-            return this;
+            return -this;
         }
 
         public Vec3 Scale(double x, double y, double z)
@@ -38,6 +35,10 @@
             Y *= y;
             Z *= z;
             return this;
+        }
+        public Vec3 Scale(Vec3 scale)
+        {
+            return Scale(scale.X, scale.Y, scale.Z);
         }
 
         public static Vec3 operator +(Vec3 v1, Vec3 v2)
