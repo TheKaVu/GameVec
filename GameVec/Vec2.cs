@@ -23,9 +23,7 @@ namespace WinXPP.GameVec
 
         public Vec2 Scale(double x, double y)
         {
-            X *= x;
-            Y *= y;
-            return this;
+            return new Vec2(X * x, Y * y);
         }
         public Vec2 Scale(Vec2 scale)
         {

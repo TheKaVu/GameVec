@@ -33,11 +33,7 @@ namespace WinXPP.GameVec
 
         public Vec4 Scale(double w, double x, double y, double z)
         {
-            W = w;
-            X *= x;
-            Y *= y;
-            Z *= z;
-            return this;
+            return new Vec4(W * w, X * x, Y * y, Z * z);
         }
         public Vec4 Scale(Vec4 scale)
         {

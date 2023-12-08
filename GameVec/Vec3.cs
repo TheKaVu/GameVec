@@ -31,10 +31,7 @@
 
         public Vec3 Scale(double x, double y, double z)
         {
-            X *= x;
-            Y *= y;
-            Z *= z;
-            return this;
+            return new Vec3(X * x, Y * y, Z * z);
         }
         public Vec3 Scale(Vec3 scale)
         {
