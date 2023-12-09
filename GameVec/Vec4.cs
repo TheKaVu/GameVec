@@ -65,6 +65,10 @@ namespace WinXPP.GameVec
                 mat[3, 0] * vec.W + mat[3, 1] * vec.X + mat[3, 2] * vec.Y + mat[3, 3] * vec.Z
                 );
         }
+        public static Vec4 operator /(Vec4 vec, double d)
+        {
+            return new Vec4(vec.W / d, vec.X / d, vec.Y / d, vec.Z / d);
+        }
 
         public override string ToString()
         {
