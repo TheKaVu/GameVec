@@ -114,7 +114,7 @@
         /// </summary>
         /// <param name="v1">First vector.</param>
         /// <param name="v2">Second vector.</param>
-        /// <returns>Sum of two vectors</returns>
+        /// <returns>Sum of two vectors.</returns>
         public static Vec3 operator +(Vec3 v1, Vec3 v2)
         {
             return new Vec3(v1.X + v2.X, v1.Y + v2.Y, v1.Z + v2.Z);
@@ -125,7 +125,7 @@
         /// </summary>
         /// <param name="v1">First vector.</param>
         /// <param name="v2">Second vector.</param>
-        /// <returns>Difference of two vectors</returns>
+        /// <returns>Difference of two vectors<./returns>
         public static Vec3 operator -(Vec3 v1, Vec3 v2)
         {
             return new Vec3(v1.X - v2.X, v1.Y - v2.Y, v1.Z - v2.Z);
@@ -134,7 +134,7 @@
         /// <summary>
         /// Negates the following vector.
         /// </summary>
-        /// <param name="vec">Vector to be negated</param>
+        /// <param name="vec">Vector to be negated.</param>
         /// <returns>Negated vector.</returns>
         public static Vec3 operator -(Vec3 vec)
         {

@@ -65,8 +65,8 @@ namespace WinXPP.GameVec
         /// <summary>
         /// Gets or sets the value of this matrix's cell in specified location.
         /// </summary>
-        /// <param name="r">Row (left to right)</param>
-        /// <param name="c">Column (left to right)</param>
+        /// <param name="r">Row (left to right).</param>
+        /// <param name="c">Column (left to right).</param>
         /// <returns>The value of this matrix cell in specified location.</returns>
         public double this[int r, int c]
         {

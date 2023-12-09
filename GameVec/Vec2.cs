@@ -86,7 +86,7 @@ namespace WinXPP.GameVec
         /// </summary>
         /// <param name="v1">First vector.</param>
         /// <param name="v2">Second vector.</param>
-        /// <returns>Sum of two vectors</returns>
+        /// <returns>Sum of two vectors.</returns>
         public static Vec2 operator +(Vec2 v1, Vec2 v2)
         {
             return new Vec2(v1.X + v2.X, v1.Y + v2.Y);
@@ -97,7 +97,7 @@ namespace WinXPP.GameVec
         /// </summary>
         /// <param name="v1">First vector.</param>
         /// <param name="v2">Second vector.</param>
-        /// <returns>Difference of two vectors</returns>
+        /// <returns>Difference of two vectors.</returns>
         public static Vec2 operator -(Vec2 v1, Vec2 v2)
         {
             return new Vec2(v1.X - v2.X, v1.Y - v2.Y);
@@ -106,7 +106,7 @@ namespace WinXPP.GameVec
         /// <summary>
         /// Negates the following vector.
         /// </summary>
-        /// <param name="vec">Vector to be negated</param>
+        /// <param name="vec">Vector to be negated.</param>
         /// <returns>Negated vector.</returns>
         public static Vec2 operator -(Vec2 vec)
         {
