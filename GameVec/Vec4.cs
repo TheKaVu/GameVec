@@ -18,12 +18,12 @@ namespace WinXPP.GameVec
             Y = y;
             Z = z;
         }
-        public Vec4(double w, Vec3 Vec4)
+        public Vec4(double w, Vec3 vec3)
         {
             W = w;
-            X = Vec4.X;
-            Y = Vec4.Y;
-            Z = Vec4.Z;
+            X = vec3.X;
+            Y = vec3.Y;
+            Z = vec3.Z;
         }
 
         public Vec4 Revert()
