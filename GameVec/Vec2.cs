@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace WinXPP.GameVec
 {
@@ -10,14 +11,20 @@ namespace WinXPP.GameVec
         /// <summary>
         /// Gets or sets the <c>X</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>X</c> coordinate of this <see cref="Vec2"/> structure.</returns>
+        /// <returns><c>X</c> coordinate of this vector.</returns>
         public double X { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>Y</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>Y</c> coordinate of this <see cref="Vec2"/> structure.</returns>
+        /// <returns><c>Y</c> coordinate of this vector.</returns>
         public double Y { get; set; }
+
+        /// <summary>
+        /// Gets the magnitude of this vector.
+        /// </summary>
+        /// <returns>Magnitude of this vector.</returns>
+        public double Magnitude => Math.Sqrt(X * X + Y * Y);
 
         /// <summary>
         /// Origin point of two-dimensional space.
@@ -79,6 +86,15 @@ namespace WinXPP.GameVec
         public Point AsPoint()
         {
             return new Point(X, Y);
+        }
+
+        /// <summary>
+        /// Determines whether this vector is parallel to the specified one.
+        /// </summary>
+        /// <param name="other">Other vector represented by <see cref="Vec2"/> structure.</param>
+        public bool IsParallelTo(Vec2 other)
+        {
+            return X / other.X == Y / other.Y;
         }
 
         /// <summary>
