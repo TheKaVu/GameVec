@@ -8,28 +8,34 @@ namespace WinXPP.GameVec
     public struct Vec4
     {
         /// <summary>
-        /// Gets or sets the <c>X</c> coordinate of this vector.
+        /// Gets or sets the <c>W</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>X</c> coordinate of this <see cref="Vec4"/> structure.</returns>
+        /// <returns><c>W</c> coordinate of this vector.</returns>
         public double W { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>X</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>X</c> coordinate of this <see cref="Vec4"/> structure.</returns>
+        /// <returns><c>X</c> coordinate of this vector.</returns>
         public double X { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>Y</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>Y</c> coordinate of this <see cref="Vec4"/> structure.</returns>
+        /// <returns><c>Y</c> coordinate of this vector.</returns>
         public double Y { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>Z</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>Z</c> coordinate of this <see cref="Vec4"/> structure.</returns>
+        /// <returns><c>Z</c> coordinate of this vector.</returns>
         public double Z { get; set; }
+
+        /// <summary>
+        /// Gets the magnitude of this vector.
+        /// </summary>
+        /// <returns>Magnitude of this vector.</returns>
+        public double Magnitude => Math.Sqrt(X * X + Y * Y + Z * Z + W * W);
 
         /// <summary>
         /// Gets the three-dimensional part of this vector represented by <see cref="GameVec.Vec3"/> structure.
@@ -100,6 +106,19 @@ namespace WinXPP.GameVec
         public Vec4 Scale(Vec4 scale)
         {
             return Scale(scale.W, scale.X, scale.Y, scale.Z);
+        }
+
+        /// <summary>
+        /// Determines whether this vector is parallel to the specified one.
+        /// </summary>
+        /// <param name="other">Other vector represented by <see cref="Vec4"/> structure.</param>
+        public bool IsParallelTo(Vec4 other)
+        {
+            double[] ratio = new double[] { W / other.W, X / other.X, Y / other.Y, Z / other.Z };
+            foreach(var r in ratio)
+                foreach(var r2 in ratio)
+                    if(r != r2) return false;
+            return true;
         }
 
         /// <summary>
