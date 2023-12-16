@@ -1,4 +1,6 @@
-﻿namespace WinXPP.GameVec
+﻿using System;
+
+namespace WinXPP.GameVec
 {
     /// <summary>
     /// Represents a three-dimensional vector.
@@ -8,20 +10,26 @@
         /// <summary>
         /// Gets or sets the <c>X</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>X</c> coordinate of this <see cref="Vec3"/> structure.</returns>
+        /// <returns><c>X</c> coordinate of this vector.</returns>
         public double X { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>Y</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>Y</c> coordinate of this <see cref="Vec3"/> structure.</returns>
+        /// <returns><c>Y</c> coordinate of this vector.</returns>
         public double Y { get; set; }
 
         /// <summary>
         /// Gets or sets the <c>Z</c> coordinate of this vector.
         /// </summary>
-        /// <returns><c>Z</c> coordinate of this <see cref="Vec3"/> structure.</returns>
+        /// <returns><c>Z</c> coordinate of this vector.</returns>
         public double Z { get; set; }
+
+        /// <summary>
+        /// Gets the magnitude of this vector.
+        /// </summary>
+        /// <returns>Magnitude of this vector.</returns>
+        public double Magnitude => Math.Sqrt(X * X + Y * Y + Z * Z);
 
         /// <summary>
         /// Gets this vector projection on surface perpendicular to <c>X</c> axis, keeping the order of coordinates.
@@ -107,6 +115,18 @@
         public Vec3 Scale(Vec3 scale)
         {
             return Scale(scale.X, scale.Y, scale.Z);
+        }
+
+        /// <summary>
+        /// Determines whether this vector is parallel to the specified one.
+        /// </summary>
+        /// <param name="other">Other vector represented by <see cref="Vec3"/> structure.</param>
+        public bool IsParallelTo(Vec3 other)
+        {
+            return
+                X / other.X == Y / other.Y &&
+                Y / other.Y == Z / other.Z &&
+                X / other.X == Z / other.Z;
         }
 
         /// <summary>
