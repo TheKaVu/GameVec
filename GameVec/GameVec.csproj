@@ -50,6 +50,9 @@
     <Compile Include="Mat3.cs" />
     <Compile Include="Mat4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Render\IModel.cs" />
+    <Compile Include="Render\MeshModel.cs" />
+    <Compile Include="Render\Vertice.cs" />
     <Compile Include="Vec2.cs" />
     <Compile Include="Vec3.cs" />
     <Compile Include="Vec4.cs" />
