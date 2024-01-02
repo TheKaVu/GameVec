@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Net.Http.Headers;
 using System.Windows.Media;
 
 namespace WinXPP.GameVec.Render
@@ -17,7 +16,7 @@ namespace WinXPP.GameVec.Render
         public HashSet<IModel> SubModels => new HashSet<IModel>(_subModels);
         public HashSet<Vertice> Vertices => new HashSet<Vertice>(_vertices);
 
-        public MeshModel(HashSet<IModel> subModels, HashSet<Vertice> vertices, Color color, int thickness, Vec3 center, Vec3 rotation)
+        public MeshModel(HashSet<IModel> subModels, HashSet<Vertice> vertices, Color color, int thickness, Vec3 center, Vec3 rotation, string id)
         {
             _subModels = new HashSet<IModel>(subModels);
             _vertices = new HashSet<Vertice>(vertices);
@@ -25,6 +24,7 @@ namespace WinXPP.GameVec.Render
             Thickness = thickness;
             Center = center;
             Rotation = rotation;
+            Id = id;
         }
     }
 }
