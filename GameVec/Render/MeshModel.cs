@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net.Http.Headers;
 using System.Windows.Media;
 
 namespace WinXPP.GameVec.Render
@@ -12,6 +13,7 @@ namespace WinXPP.GameVec.Render
         public int Thickness { get; }
         public Vec3 Center { get; }
         public Vec3 Rotation { get; set; }
+        public string Id { get;}
         public HashSet<IModel> SubModels => new HashSet<IModel>(_subModels);
         public HashSet<Vertice> Vertices => new HashSet<Vertice>(_vertices);
 
