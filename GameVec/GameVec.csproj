@@ -65,6 +65,9 @@
     <Compile Include="Simulated\EntityType.cs" />
     <Compile Include="Simulated\EntityTypeDoubleRegistrationException.cs" />
     <Compile Include="Simulated\IHitbox.cs" />
+    <Compile Include="Simulated\TickClock.cs" />
+    <Compile Include="Simulated\TickEventHandler.cs" />
+    <Compile Include="Simulated\WorldGrid.cs" />
     <Compile Include="Simulated\AI\IIntelligent.cs" />
     <Compile Include="Vec2.cs" />
     <Compile Include="Vec3.cs" />
